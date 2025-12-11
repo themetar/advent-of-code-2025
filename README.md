@@ -16,6 +16,10 @@ Similarly answers should reside in the `answers` directory, and follow the same 
 
 Tests are generated on the fly and match input files with answer files. Pass the targeted puzzle as an argument in the command line `{day}_{puzzle_part}`. For example: `ruby tests/test.rb 01_2`
 
+### Additional tests
+
+Day 8 part 1 has a custom test, since it requires an extra parameter. Run it with `ruby tests/test_08_1.rb`
+
 ## Run the programs
 
 You can run the solution file itself like a script with input redirect `ruby days/XX_Y.rb <inputfile` or pipe `cat inputfile | ruby days/XX_Y.rb`

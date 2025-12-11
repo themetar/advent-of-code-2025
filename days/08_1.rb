@@ -10,10 +10,8 @@ module Day08_1
     point_a.zip(point_b).sum { |coord_a, coord_b| (coord_a - coord_b)**2 }
   end
 
-  def execute(input)
-    max_links = input.each_line.first.to_i
-
-    nodes = parse_nodes(input.lines(chomp:true)[1..])
+  def execute(input, max_links)
+    nodes = parse_nodes(input.lines(chomp: true))
 
     edges = []
     
