@@ -16,7 +16,7 @@ end
 
 puzzle_id = ARGV[0]
 
-_, day, puzzle = *puzzle_id.match(/(..)_(.)/)
+_, day, puzzle = *puzzle_id.match(/(..)_?(.)?/)
 
 require "minitest/autorun"
 
